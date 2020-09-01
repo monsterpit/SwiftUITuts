@@ -1,7 +1,9 @@
 # Reactive Programmimng and Layouts (Protocol and Generic Protocol)
 
+Generic and Protocols
 ![alt text](https://github.com/monsterpit/SwiftUITuts/tree/master/Lecture_3%20ReactiveUI/LectureImages/GenericAndProtocols.png "GenericAndProtocols")
 
+Layouts
 ![alt text](https://github.com/monsterpit/SwiftUITuts/tree/master/Lecture_3%20ReactiveUI/LectureImages/Layout1.png "Layout1")
 
 ![alt text](https://github.com/monsterpit/SwiftUITuts/tree/master/Lecture_3%20ReactiveUI/LectureImages/Layout2.png "Layout2")
