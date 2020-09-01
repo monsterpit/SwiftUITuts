@@ -1,5 +1,8 @@
 # Reactive Programmimng and Layouts (Protocol and Generic Protocol)
 
+//cheat sheet for github
+https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#images
+
 Generic and Protocols
 ![alt text](https://github.com/monsterpit/SwiftUITuts/tree/master/Lecture_3%20ReactiveUI/LectureImages/GenericAndProtocols.png "GenericAndProtocols")
 
