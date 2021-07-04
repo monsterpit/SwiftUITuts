@@ -43,7 +43,10 @@ struct CardView: View{
                 Text(card.content).foregroundColor(.black)
             }
             else{
-                RoundedRectangle(cornerRadius: 10)
+                if !card.isMatched{
+                    RoundedRectangle(cornerRadius: 10)
+                }
+                
             }
             RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
             
