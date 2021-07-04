@@ -40,16 +40,14 @@ struct CardView: View{
         ZStack {  // stack one over the other
             if card.isFaceUp{
                 RoundedRectangle(cornerRadius: 10).foregroundColor(.white) //override the foregroundColor
+                 RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
                 Text(card.content).foregroundColor(.black)
             }
             else{
                 if !card.isMatched{
                     RoundedRectangle(cornerRadius: 10)
                 }
-                
             }
-            RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
-            
         } .font(.system(size: fontSize(for: size)))
     }
     
