@@ -13,7 +13,7 @@ struct ContentView: View {
         // HStack(spacing is cell spacing)
         HStack(spacing: 50){
             ForEach(0..<4) {index in
-                CardView(isFaceUp: true)
+                CardView(isFaceUp: false)
             }
         }
         .foregroundColor(.orange)
