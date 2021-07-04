@@ -29,13 +29,25 @@ struct Grid<Item,ItemView>: View where Item: Identifiable,ItemView:  View{
         }
     }
     
+//    func body(for item: Item,in layout: GridLayout) -> some View{
+//        let index = items.firstIndex(matching: item)!
+//        return viewForItem(item)
+//            .frame(width: layout.itemSize.width, height: layout.itemSize.height)
+//            .position(layout.location(ofItemAt: index))
+//    }
+  
+    
+    //MARK:- Group basically groups all the views and if it doesnt have any view it return some empty Content View
     func body(for item: Item,in layout: GridLayout) -> some View{
         let index = items.firstIndex(matching: item)
-        return viewForItem(item)
-            .frame(width: layout.itemSize.width, height: layout.itemSize.height)
-            .position(layout.location(ofItemAt: index))
+        return Group {
+            if index != nil{
+                 viewForItem(item)
+                    .frame(width: layout.itemSize.width, height: layout.itemSize.height)
+                    .position(layout.location(ofItemAt: index!))
+            }
+        }
     }
-    
 
 }
 
