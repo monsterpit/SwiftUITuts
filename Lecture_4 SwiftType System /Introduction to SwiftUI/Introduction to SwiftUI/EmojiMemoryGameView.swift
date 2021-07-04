@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  EmojiMemoryGameView.swift
 //  Introduction to SwiftUI
 //
 //  Created by Mojave on 30/08/20.
@@ -8,23 +8,21 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct EmojiMemoryGameView: View {
     //Obseravble object when object change redraw
     //SwiftUI redraw the the that only change because its identifiable
     @ObservedObject var viewModel: EmojiMemoryGame
     
     var body: some View {
-        // HStack(spacing is cell spacing)
-        HStack(spacing: 50){
-            ForEach(viewModel.cards) {card in
-                CardView(card: card).onTapGesture {
-                    self.viewModel.choose(card: card)
-                }
-            }
+        
+        Grid(viewModel.cards) {card in
+            CardView(card: card).onTapGesture {
+                self.viewModel.choose(card: card)
+            }.padding(10)
         }
         .foregroundColor(.orange)
         .padding()  //padding for whole Views
-       
+        
     }
 }
 
@@ -55,16 +53,16 @@ struct CardView: View{
     //MARK: - Drawing Constants
     let cornerRadius: CGFloat = 10
     let edgeLineWidth: CGFloat = 3
-
+    
     func fontSize(for size: CGSize) -> CGFloat{
         return min(size.width,size.height) * 0.75
     }
-
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(viewModel: EmojiMemoryGame())
+        EmojiMemoryGameView(viewModel: EmojiMemoryGame())
     }
 }
 
