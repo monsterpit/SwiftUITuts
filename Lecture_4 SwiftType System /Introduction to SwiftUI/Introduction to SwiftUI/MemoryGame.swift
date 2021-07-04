@@ -11,20 +11,7 @@ import Foundation
 struct MemoryGame<CardContent> where CardContent: Equatable {
     var cards: Array<Card>
     var indexOfTheOneAndOnlyFaceUpCard: Int?{
-        get{
-            var faceUpCardIndices = [Int]()
-            for index in cards.indices{
-                if cards[index].isFaceUp{
-                    faceUpCardIndices.append(index)
-                }
-            }
-            
-            if faceUpCardIndices.count == 1{
-                return faceUpCardIndices.first
-            }else{
-                return nil
-            }
-        }
+        get{ cards.indices.filter{ cards[$0].isFaceUp}.only }
         set{
             for index in cards.indices{
                 cards[index].isFaceUp = index == newValue
