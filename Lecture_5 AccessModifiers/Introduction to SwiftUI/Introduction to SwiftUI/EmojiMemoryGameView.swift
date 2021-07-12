@@ -36,26 +36,26 @@ struct CardView: View{
         }
     }
     
-    func body(for size: CGSize) -> some View{
+    private func body(for size: CGSize) -> some View{
         ZStack {  // stack one over the other
             if card.isFaceUp{
-                RoundedRectangle(cornerRadius: 10).foregroundColor(.white) //override the foregroundColor
-                 RoundedRectangle(cornerRadius: 10).stroke(lineWidth: 3)
+                RoundedRectangle(cornerRadius: cornerRadius).foregroundColor(.white) //override the foregroundColor
+                 RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
                 Text(card.content).foregroundColor(.black)
             }
             else{
                 if !card.isMatched{
-                    RoundedRectangle(cornerRadius: 10)
+                    RoundedRectangle(cornerRadius: cornerRadius)
                 }
             }
         } .font(.system(size: fontSize(for: size)))
     }
     
     //MARK: - Drawing Constants
-    let cornerRadius: CGFloat = 10
-    let edgeLineWidth: CGFloat = 3
+    private let cornerRadius: CGFloat = 10
+    private let edgeLineWidth: CGFloat = 3
     
-    func fontSize(for size: CGSize) -> CGFloat{
+    private func fontSize(for size: CGSize) -> CGFloat{
         return min(size.width,size.height) * 0.75
     }
     
