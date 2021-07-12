@@ -41,6 +41,7 @@ struct CardView: View{
             if card.isFaceUp{
                 RoundedRectangle(cornerRadius: cornerRadius).foregroundColor(.white) //override the foregroundColor
                  RoundedRectangle(cornerRadius: cornerRadius).stroke(lineWidth: edgeLineWidth)
+                Circle().padding(5).opacity(0.4)
                 Text(card.content).foregroundColor(.black)
             }
             else{
@@ -56,14 +57,16 @@ struct CardView: View{
     private let edgeLineWidth: CGFloat = 3
     
     private func fontSize(for size: CGSize) -> CGFloat{
-        return min(size.width,size.height) * 0.75
+        return min(size.width,size.height) * 0.7
     }
     
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        EmojiMemoryGameView(viewModel: EmojiMemoryGame())
+        let game = EmojiMemoryGame()
+        game.choose(card: game.cards[0])
+        return EmojiMemoryGameView(viewModel: game)
     }
 }
 
