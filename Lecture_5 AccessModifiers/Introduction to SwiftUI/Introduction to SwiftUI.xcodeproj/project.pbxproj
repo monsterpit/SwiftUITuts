@@ -21,6 +21,7 @@
 		B0379F172692348F0067DD6A /* GridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0379F152692348F0067DD6A /* GridLayout.swift */; };
 		B0379F19269234F60067DD6A /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0379F18269234F60067DD6A /* Grid.swift */; };
 		B0BC3523269247190014CF9B /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC3522269247190014CF9B /* Array+Only.swift */; };
+		B0CEEA9B269CBFD400788751 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEEA9A269CBFD400788751 /* Pie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B0379F152692348F0067DD6A /* GridLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridLayout.swift; sourceTree = "<group>"; };
 		B0379F18269234F60067DD6A /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		B0BC3522269247190014CF9B /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
+		B0CEEA9A269CBFD400788751 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				B0287E2524FBF40600F18262 /* LaunchScreen.storyboard */,
 				B0287E2824FBF40600F18262 /* Info.plist */,
 				B0287E2224FBF40600F18262 /* Preview Content */,
+				B0CEEA9A269CBFD400788751 /* Pie.swift */,
 			);
 			path = "Introduction to SwiftUI";
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CEEA9B269CBFD400788751 /* Pie.swift in Sources */,
 				B0287E1B24FBF40400F18262 /* AppDelegate.swift in Sources */,
 				B0287E1D24FBF40400F18262 /* SceneDelegate.swift in Sources */,
 				B00C680624FD64B600DB43E3 /* MemoryGame.swift in Sources */,
