@@ -22,6 +22,7 @@
 		B0379F19269234F60067DD6A /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0379F18269234F60067DD6A /* Grid.swift */; };
 		B0BC3523269247190014CF9B /* Array+Only.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC3522269247190014CF9B /* Array+Only.swift */; };
 		B0CEEA9B269CBFD400788751 /* Pie.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEEA9A269CBFD400788751 /* Pie.swift */; };
+		B0CEEA9D269CD0F200788751 /* Cardify.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CEEA9C269CD0F200788751 /* Cardify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		B0379F18269234F60067DD6A /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
 		B0BC3522269247190014CF9B /* Array+Only.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Only.swift"; sourceTree = "<group>"; };
 		B0CEEA9A269CBFD400788751 /* Pie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pie.swift; sourceTree = "<group>"; };
+		B0CEEA9C269CD0F200788751 /* Cardify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cardify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				B0287E1A24FBF40400F18262 /* AppDelegate.swift */,
 				B0287E1C24FBF40400F18262 /* SceneDelegate.swift */,
 				B0287E1E24FBF40400F18262 /* EmojiMemoryGameView.swift */,
+				B0CEEA9C269CD0F200788751 /* Cardify.swift */,
 				B00C680724FD66C900DB43E3 /* EmojiMemoryGame.swift */,
 				B00C680524FD64B600DB43E3 /* MemoryGame.swift */,
 				B0BC3522269247190014CF9B /* Array+Only.swift */,
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0CEEA9D269CD0F200788751 /* Cardify.swift in Sources */,
 				B0CEEA9B269CBFD400788751 /* Pie.swift in Sources */,
 				B0287E1B24FBF40400F18262 /* AppDelegate.swift in Sources */,
 				B0287E1D24FBF40400F18262 /* SceneDelegate.swift in Sources */,
